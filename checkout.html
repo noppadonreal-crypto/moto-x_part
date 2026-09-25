@@ -1,0 +1,31 @@
+<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MOTO-X PARTS | สั่งซื้อ</title><link rel="stylesheet" href="assets/style.css"></head><body><div class="topline"></div>
+<header class="site-header">
+  <div class="utility-bar">
+    <div class="utility-inner">
+      <div class="utility-links">
+        <span> จัดส่งทั่วไทย</span><i></i><span> สินค้าของแท้</span><i></i><span>✓ รับประกันคุณภาพ</span>
+      </div>
+      <div class="utility-account"><span id="customerChip"></span><a href="admin.html" class="utility-admin">Admin</a></div>
+    </div>
+  </div>
+  <div class="main-header">
+    <div class="head">
+      <a class="brand" href="index.html">MOTO<span>-X</span> PARTS</a>
+      <input type="checkbox" id="navToggle" class="nav-toggle">
+      <label for="navToggle" class="nav-burger" aria-label="เปิดเมนู">☰</label>
+      <nav class="nav">
+        <a href="index.html">หน้าหลัก</a>
+        <a href="products.html">สินค้า</a>
+        <a href="about.html">เกี่ยวกับเรา</a>
+        <a href="product.html?id=">รีวิวสินค้า</a>
+        <a href="track.html">ติดตามคำสั่งซื้อ</a>
+        <a href="faq.html">FAQ</a>
+        <a href="faq.html#policy">นโยบาย</a>
+      </nav>
+      <div class="header-actions">
+        <div class="header-search"><span>⌕</span><input id="headerSearch" type="search" placeholder="ค้นหาสินค้า..." aria-label="ค้นหาสินค้า"></div>
+        <a class="btn cart-link" data-open-cart href="cart.html"> <span class="cart-label">ตะกร้า</span> <span class="cart-count" data-cart-count>0</span></a>
+      </div>
+    </div>
+  </div>
+</header><main class="section"><div class="wrap"><div class="eyebrow">CHECKOUT</div><h1 class="title">หน้าสั่งซื้อ</h1><div class="checkout"><section class="formbox"><h2>ข้อมูลผู้สั่งซื้อ</h2><form id="checkoutForm" class="form"><label>ชื่อ-นามสกุล<input required name="name" placeholder="กรอกชื่อ-นามสกุล"></label><label>เบอร์โทรศัพท์<input required name="phone" type="tel" placeholder="08x-xxx-xxxx"></label><label>อีเมล<input name="email" type="email" placeholder="example@email.com"></label><label>วิธีรับสินค้า<select name="delivery"><option>จัดส่งตามที่อยู่</option><option>รับสินค้าที่จุดนัดหมาย SIBA College</option></select></label><label>ที่อยู่จัดส่ง<textarea name="address" placeholder="บ้านเลขที่ / ถนน / แขวง / เขต / จังหวัด / รหัสไปรษณีย์"></textarea></label><label>วิธีชำระเงิน<select name="payment"><option>โอนเงิน (ระบบจำลอง)</option><option>เก็บเงินปลายทาง (ระบบจำลอง)</option></select></label><label>หมายเหตุเพิ่มเติม<textarea name="note" placeholder="เช่น รุ่นรถ สี หรือรายละเอียดที่ต้องการสอบถาม"></textarea></label><div class="privacy-consent"><label class="consent-label"><input type="checkbox" id="privacyConsent" name="privacyConsent" required><span>ข้าพเจ้ายินยอมให้ MOTO-X PARTS เก็บรวบรวมและใช้ข้อมูลส่วนบุคคลที่ให้ไว้ เพื่อดำเนินการสั่งซื้อ ติดต่อ และให้บริการที่เกี่ยวข้อง ตาม <a href="faq.html#privacy" target="_blank">นโยบายความเป็นส่วนตัว</a></span></label></div><button class="btn" type="submit">✓ ยืนยันคำสั่งซื้อ</button></form><div id="success" class="success" style="margin-top:15px">สั่งซื้อสำเร็จในระบบสาธิต <br>เลขที่คำสั่งซื้อ: <b id="orderNo"></b><br>โปรดเก็บเลขนี้ไว้สำหรับอ้างอิง</div></section><aside class="orderbox"><h2>สรุปรายการ</h2><div id="orderList"></div><div class="coupon-box"><input id="couponCode" placeholder="ใส่โค้ดส่วนลด เช่น MOTOX10"><button type="button" class="btn" onclick="applyCouponCode()">ใช้คูปอง</button><small>โค้ดทดลอง: MOTOX10 / MOTOX500 / SIBA15</small></div><div id="couponDiscount"></div><div class="total" style="margin-top:15px"><span>ยอดรวม</span><br><span id="checkoutTotal">฿0</span></div><div class="notice" style="margin-top:15px">ระบบนี้เป็นแบบจำลองสำหรับงานเว็บไซต์ ยังไม่ได้เชื่อมต่อการชำระเงินจริง</div></aside></div></div></main><div id="drawerShade" class="drawer-shade"></div><aside id="drawer" class="drawer"><div class="drawer-head"><b> ตะกร้าของคุณ</b><button class="btn ghost" data-close-cart>ปิด</button></div><div id="drawerItems" class="drawer-items"></div><div class="drawer-foot"><div class="drawer-total"><span>รวม</span><span id="drawerTotal">฿0</span></div><a class="btn" style="width:100%" href="cart.html">กลับไปตะกร้า</a></div></aside><script src="assets/data.js"></script><script src="assets/app.js"></script></body></html>
